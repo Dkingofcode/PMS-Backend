@@ -32,6 +32,7 @@ app.use('/api/checkin', checkinRoutes);
 app.get('/', (req, res) => {
   res.send('Welcome to the Patient Management System API');
 });
+
 const server = app.listen(5000, () => console.log('Server running on port 5000'));
 
 server.on('error', (err) => {
